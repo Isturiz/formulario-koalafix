@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Koala Fix</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+
+      <div>
+        <h1 id="titulo">Koala Fix</h1>
+        <p><span>Servicio Técnico</span></p>
+      </div>
+
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main>
+    <!-- Formulario -->
+    <form id="formulario" action="">
+
+      <!-- Cliente -->
+      <div class="formulario-grupos">
+        <label for="cliente">Cliente</label>
+          <input
+            id="cliente"
+            name="cliente"
+            class="formulario-controles username"
+            type="text"
+            placeholder="Ingresar nombre"
+            required
+          >
+      </div>
+
+      <!-- Cédula -->
+      <div class="formulario-grupos">
+        <label for="cedula">Cédula</label>
+          <input
+            id="cedula"
+            name="cedula"
+            class="formulario-controles"
+            type="text"
+            placeholder="Ingresar cédula"
+            required
+          >
+      </div>
+
+      <!-- Fecha -->
+      <div class="formulario-grupos">
+        <label for="fecha">Fecha</label>
+          <input
+            id="fecha"
+            name="fecha"
+            class="formulario-controles"
+            type="date"
+            required
+          >
+      </div>
+
+      <!-- Tipo de equipo -->
+      <div class="formulario-grupos">
+        <label for="equipo">Tipo de equipo</label>
+
+        <!-- !!!! arreglar dimensiones del select !!!! -->
+        <select id="equipo" name="equipo" class="formulario-controles-select" required>
+          <option selected value>Seleccionar equipo</option>
+          <option value="computadora">Computadora</option>
+          <option value="monitor">Monitor</option>
+          <option value="regulador">Regulador</option>
+          <option value="impresora">Impresora</option>
+          <option value="otro">Otro</option>
+
+        </select>
+      </div>
+
+      <!-- Descripción del equipo -->
+      <div class="formulario-grupos">
+
+        <p>Descripción del equipo</p>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          class="formulario-controles"
+          placeholder="Escribir descripción aquí..."
+          required
+        ></textarea>
+
+      </div>
+
+      <!-- Fallas expuestas por el cliente -->
+      <div class="formulario-grupos">
+
+        <p>Falla(s) expuesta(s) por el cliente</p>
+        <textarea
+          id="falla"
+          name="falla"
+          class="formulario-controles"
+          placeholder="Escribir descripción aquí..."
+          required
+        ></textarea>
+        
+      </div>
+
+      <!-- Garantía -->
+      <div class="formulario-grupos"> 
+        <p>¿Garantía?</p>
+
+        <!-- radiobutton -->
+        <label>
+          <input
+            name="garantia"
+            id="garantia_si"
+            value="si"
+            type="radio"
+        >Sí</label>
+
+        <!-- radiobutton -->
+        <label>
+          <input
+            name="garantia"
+            id="garantia_no"
+            value="no"
+            type="radio"
+            checked
+        >No</label>
+      </div>
+
+      <!-- Botones -->
+      <div>
+        <!-- Botón registrar -->
+        <button
+          class="boton"
+          id="registrar"
+          type="submit">
+          Registrar
+        </button>
+
+        <!-- Botón reiniciar -->
+        <button
+          class="boton"
+          id="reiniciar"
+          type="reset">
+          Reiniciar
+        </button>
+      
+        <!-- Botón like -->
+        <button
+          id="aprobar"
+          class="boton">
+          Aprobar tarea :)
+        </button>
+          
+      </div>
+    </form>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
