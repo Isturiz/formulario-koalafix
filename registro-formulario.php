@@ -8,9 +8,6 @@ $descripcion = $_POST['descripcion'];
 $falla = $_POST['falla'];
 $garantia = $_POST['garantia'];
 
-echo "test".$cliente;
-
-/* echo "<body style='  background-image: linear-gradient(180deg, #505467 0, #1f3259 50%, #00154b 100%);'>"; */
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +69,7 @@ echo "test".$cliente;
           <p class="formulario-controles"><?php echo $garantia;?></p>
         </div>
 
-        <!-- <a href="index.html" class=boton>Volver</a> -->
+        <a href="index.html" class=boton>Volver</a>
 
       </div>
       </form>
